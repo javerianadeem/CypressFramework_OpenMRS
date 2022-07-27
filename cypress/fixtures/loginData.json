@@ -1,0 +1,9 @@
+{
+    "validUsername": "Admin",
+    "validPassword": "Admin123",
+    "invalidUsername": "hello",
+    "invalidPassword": "hello234",
+    "locationErrorMessage": "You must choose a location!",
+    "usernamePasswordErrorMessage": "Invalid username/password. Please try again.",
+    "cantLoginModalMessage": "Please contact your System Administrator."
+}
