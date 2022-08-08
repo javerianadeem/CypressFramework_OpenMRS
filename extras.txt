@@ -24,3 +24,7 @@
 // -- This will overwrite an existing command --
 
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+            // cy.get('.select').find('li').each(($ele, index)=> {
+            //     expect(locationName.location_Elements[index]).to.equal($ele.text().trim())
+            // })

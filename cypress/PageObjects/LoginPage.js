@@ -17,13 +17,13 @@ class LoginPage {
         return cy.get("[id='Isolation Ward']")
     }
     laboratory(){
-        return cy.get("[id='Laboratory']")
+        return cy.get("#Laboratory")
     }
     outpatientClinic(){
         return cy.get("[id='Outpatient Clinic']")
     }
     pharmacy(){
-        return cy.get("[id='Pharmacy']")
+        return cy.get("#Pharmacy")
     }
     registrationDesk(){
         return cy.get("[id='Registration Desk']")

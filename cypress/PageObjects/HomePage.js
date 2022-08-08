@@ -25,20 +25,43 @@ class HomePage {
     }
 
     reportsTab(){
-        cy.get("#reportingui-reports-homepagelink-reportingui-reports-homepagelink-extension")
+        return cy.get("#reportingui-reports-homepagelink-reportingui-reports-homepagelink-extension")
     }
 
     dataManagementTab(){
-        cy.get("#coreapps-datamanagement-homepageLink-coreapps-datamanagement-homepageLink-extension")
+        return cy.get("#coreapps-datamanagement-homepageLink-coreapps-datamanagement-homepageLink-extension")
     }
 
     configureMetadataTab(){
-        cy.get("#org-openmrs-module-adminui-configuremetadata-homepageLink-org-openmrs-module-adminui-configuremetadata-homepageLink-extension")
+        return cy.get("#org-openmrs-module-adminui-configuremetadata-homepageLink-org-openmrs-module-adminui-configuremetadata-homepageLink-extension")
     }
 
     systemAdministrationTab(){
-        cy.get("#coreapps-systemadministration-homepageLink-coreapps-systemadministration-homepageLink-extension")
+        return cy.get("#coreapps-systemadministration-homepageLink-coreapps-systemadministration-homepageLink-extension")
     }
+
+    logoutButton(){
+        return cy.xpath("//a[contains(text(),'Logout')]")
+    }
+    changeLocationDropdown(){
+        return cy.get(".change-location")
+    }
+    adminDropdown(){
+        return cy.xpath("//li[@class='nav-item identifier']")
+    }
+    myAccount(){
+        return cy.xpath("//ul[@id='user-account-menu']//a")
+    }
+    changeLocationDropDownElements(){
+        return cy.get(".select")
+    }
+    // adminDropdownIcon(){
+    //     return cy.xpath("//li[@class='nav-item identifier']//i[@class='icon-user small']")
+    // }
+    homeLogo(){
+        return cy.get(".logo")
+    }
+
 
 }
 
